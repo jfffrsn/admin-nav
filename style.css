@@ -1,0 +1,136 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body[opened] {
+    overflow: hidden;
+}
+
+:root {
+    --topbar-height: 56px;
+    --sidebar-width: 240px;
+}
+
+/*topbar*/
+.topbar {
+    background-color: #ff5722;
+    height: var(--topbar-height);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+/*sidebar*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+.sidebar:not([persistent]) {
+    z-index: 2;
+}
+.sidebar[persistent] {
+    width: 100%;
+}
+
+.sidebar-container {
+    width: var(--sidebar-width);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition-property: transform;
+    transform: translate3d(-100%, 0, 0);
+    visibility: hidden;
+    transition-duration: 200ms;
+}
+
+.sidebar-container[opened] {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+}
+
+.scrim {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition-property: opacity;
+    transform: translateZ(0);
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+.scrim[visible] {
+    opacity: 1;
+    visibility: visible;
+    transition-duration: 200ms;
+}
+
+
+.guide-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+
+}
+
+
+
+.guide-header {
+    background-color: plum;
+    height: var(--topbar-height);
+    display: none;
+}
+.guide-header[visible] {
+    display: flex;
+}
+.guide-spacer{
+    background-color: lavender;
+    margin-top: var(--topbar-height);
+    display: none;
+}
+.guide-spacer[visible] {
+    display: block;
+}
+.guide-logo{
+    background-color: orchid;
+}
+
+
+/*main*/
+.main {
+    background-color: beige;
+    margin-top: var(--topbar-height);
+    display: flex;
+    flex: 1;
+    flex-basis: 0.000000001px;
+}
+.main[guide-persistent-and-visible] {
+    margin-left: var(--sidebar-width);
+}
+
+
+.main-content {
+    background-color: steelblue;
+    flex: 1;
+}

@@ -1,4 +1,4 @@
-document.body.setAttribute('moo', ''); //set phony bbolean attribute
+document.body.setAttribute('moo', ''); //set phony boolean attribute
 
 const appSidebar = document.querySelector('.app-sidebar');
 const appScrim = document.querySelector('.app-scrim');
@@ -16,9 +16,12 @@ appTopbarNavicon.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
     console.log('foo');
-    //   if(){
-    //
-    //   } else {
-    //
-    //   }
+    if(appSidebar.hasAttribute('persistent')) {
+        appSidebarContainer.removeAttribute('opened','');
+        appMiniGuide.removeAttribute('hidden','');
+        appMain.removeAttribute('guide-persistent-and-visible','');
+        appMain.setAttribute('mini-guide-visible','');
+    } else {
+
+    }
 }

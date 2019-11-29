@@ -132,6 +132,10 @@ body[opened] {
   background-color: var(--app-mini-guide-bg-color);
   z-index: 2030;
 }
+.app-mini-guide[hidden] {
+  display: none;
+}
+
 
 /*app-main*/
 .app-main {
@@ -145,7 +149,7 @@ body[opened] {
   margin-left: var(--app-sidebar-width);
 }
 
-.app-main[app-mini-guide-visible] {
+.app-main[mini-guide-visible] {
   margin-left: 72px;
 }
 

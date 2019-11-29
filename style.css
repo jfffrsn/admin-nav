@@ -22,7 +22,7 @@ body[opened] {
     --app-topbar-bg-color: orange;
     --app-sidebar-width: 240px;
     --guide-bg-color: pink;
-    --mini-guide-bg-color: seagreen;
+    --app-mini-guide-bg-color: seagreen;
 }
 
 /*app-topbar*/
@@ -121,13 +121,13 @@ body[opened] {
 
 
 /*mini guide*/
-.mini-guide{
+.app-mini-guide{
     position: fixed;
     left: 0;
     top: var(--app-topbar-height);
     bottom: 0;
     display: inline-block;
-    background-color: var(--mini-guide-bg-color);
+    background-color: var(--app-mini-guide-bg-color);
     z-index: 2030;
 }
 
@@ -159,7 +159,7 @@ body[opened] {
 }
 
 
-.app-main[mini-guide-visible] {
+.app-main[app-mini-guide-visible] {
     margin-left: 72px;
 }
 

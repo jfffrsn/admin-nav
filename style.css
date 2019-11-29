@@ -23,6 +23,7 @@ body[opened] {
   --app-sidebar-width: 240px;
   --guide-bg-color: pink;
   --app-mini-guide-bg-color: seagreen;
+  --app-mini-guide-width: 72px;
 }
 
 /*app-topbar*/
@@ -131,6 +132,7 @@ body[opened] {
   display: inline-block;
   background-color: var(--app-mini-guide-bg-color);
   z-index: 2030;
+  width: var(--app-mini-guide-width);
 }
 .app-mini-guide[hidden] {
   display: none;
@@ -150,7 +152,7 @@ body[opened] {
 }
 
 .app-main[mini-guide-visible] {
-  margin-left: 72px;
+  margin-left: var(--app-mini-guide-width);
 }
 
 .app-main-content {

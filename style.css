@@ -1,169 +1,147 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    height: 100%;
+  margin: 0;
+  height: 100%;
 }
 
 body[opened] {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 :root {
-    --app-topbar-height: 56px;
-    --app-topbar-bg-color: orange;
-    --app-sidebar-width: 240px;
-    --guide-bg-color: pink;
-    --app-mini-guide-bg-color: seagreen;
+  --app-topbar-height: 56px;
+  --app-topbar-bg-color: orange;
+  --app-sidebar-width: 240px;
+  --guide-bg-color: pink;
+  --app-mini-guide-bg-color: seagreen;
 }
 
 /*app-topbar*/
 .app-topbar {
-    background-color:var(--app-topbar-bg-color);
-    height: var(--app-topbar-height);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    transform: translateY(0);
-    transition: transform 0.3s ease;
+  background-color: var(--app-topbar-bg-color);
+  height: var(--app-topbar-height);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
 }
 
 /*app-sidebar*/
 .app-sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .app-sidebar:not([persistent]) {
-    z-index: 2;
+  z-index: 2;
 }
 .app-sidebar[persistent] {
-    width: 100%;
+  width: 100%;
 }
 
 .app-sidebar-container {
-    width: var(--app-sidebar-width);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    transition-property: transform;
-    transform: translate3d(-100%, 0, 0);
-    visibility: hidden;
-    transition-duration: 200ms;
+  width: var(--app-sidebar-width);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition-property: transform;
+  transform: translate3d(-100%, 0, 0);
+  visibility: hidden;
+  transition-duration: 200ms;
 }
 
 .app-sidebar-container[opened] {
-    transform: translate3d(0, 0, 0);
-    visibility: visible;
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
 }
 
 .app-scrim {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition-property: opacity;
-    transform: translateZ(0);
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.5);
-    visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition-property: opacity;
+  transform: translateZ(0);
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
 }
 .app-scrim[visible] {
-    opacity: 1;
-    visibility: visible;
-    transition-duration: 200ms;
+  opacity: 1;
+  visibility: visible;
+  transition-duration: 200ms;
 }
 
-
-.guide-container{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--guide-bg-color);
-
+.app-guide-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--guide-bg-color);
 }
 
-
-
-.guide-header {
-    background-color: plum;
-    height: var(--app-topbar-height);
-    display: none;
+.app-guide-header {
+  background-color: plum;
+  height: var(--app-topbar-height);
+  display: none;
 }
 .guide-header[visible] {
-    display: flex;
+  display: flex;
 }
-.guide-spacer{
-    background-color: lavender;
-    margin-top: var(--app-topbar-height);
-    display: none;
+.app-guide-spacer {
+  background-color: lavender;
+  margin-top: var(--app-topbar-height);
+  display: none;
 }
-.guide-spacer[visible] {
-    display: block;
+.app-guide-spacer[visible] {
+  display: block;
 }
-.guide-logo{
-    background-color: orchid;
+.app-guide-logo {
+  background-color: orchid;
 }
-
 
 /*mini guide*/
-.app-mini-guide{
-    position: fixed;
-    left: 0;
-    top: var(--app-topbar-height);
-    bottom: 0;
-    display: inline-block;
-    background-color: var(--app-mini-guide-bg-color);
-    z-index: 2030;
+.app-mini-guide {
+  position: fixed;
+  left: 0;
+  top: var(--app-topbar-height);
+  bottom: 0;
+  display: inline-block;
+  background-color: var(--app-mini-guide-bg-color);
+  z-index: 2030;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*app-main*/
 .app-main {
-    background-color: beige;
-    margin-top: var(--app-topbar-height);
-    display: flex;
-    flex: 1;
-    flex-basis: 0.000000001px;
+  background-color: beige;
+  margin-top: var(--app-topbar-height);
+  display: flex;
+  flex: 1;
+  flex-basis: 0.000000001px;
 }
 .app-main[guide-persistent-and-visible] {
-    margin-left: var(--app-sidebar-width);
+  margin-left: var(--app-sidebar-width);
 }
 
-
 .app-main[app-mini-guide-visible] {
-    margin-left: 72px;
+  margin-left: 72px;
 }
 
 .app-main-content {
-    background-color: steelblue;
-    flex: 1;
+  background-color: steelblue;
+  flex: 1;
 }

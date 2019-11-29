@@ -37,6 +37,11 @@ body[opened] {
   transition: transform 0.3s ease;
 }
 
+.app-topbar-navicon{
+    background-color: tomato;
+}
+
+
 /*app-sidebar*/
 .app-sidebar {
   position: fixed;
@@ -99,8 +104,11 @@ body[opened] {
   height: var(--app-topbar-height);
   display: none;
 }
-.guide-header[visible] {
+.app-guide-header[visible] {
   display: flex;
+}
+.app-guide-navicon{
+    background-color: tomato;
 }
 .app-guide-spacer {
   background-color: lavender;

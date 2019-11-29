@@ -11,7 +11,9 @@
 
 <body>
     <div class="app-topbar">
-        <button>menu</button>
+        <button class="app-topbar-navicon" aria-label="Guide" aria-pressed="false">
+            menu
+        </button>
         <span class="app-topbar-logo">Logo</span>
         search user menu
     </div>
@@ -23,7 +25,6 @@
     <!-- /.app-mini-guide -->
 
     <div class="app-sidebar" persistent opened>
-
         <div class="app-scrim" visible></div>
         <!-- /.app-scrim -->
 
@@ -34,13 +35,13 @@
 
                 <div class="app-guide-content">
                     <div class="app-guide-header" visible>
-                        <button>menu</button>
+                        <button class="app-guide-navicon" aria-label="Guide" aria-pressed="true">
+                            menu
+                        </button>
                         <span class="app-guide-logo">Logo</span>
                     </div>
                     <!-- /.app-guide-header -->
                     nav and stuff
-
-                    <br />q<br />w<br />d<br />d<br />d<br />d
                 </div>
                 <!-- /.app-guide-content -->
             </div>
@@ -236,6 +237,8 @@
         <!-- /.app-main-content -->
     </div>
     <!-- /.app-main -->
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>

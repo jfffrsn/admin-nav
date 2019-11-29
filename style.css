@@ -18,17 +18,17 @@ body[opened] {
 }
 
 :root {
-    --topbar-height: 56px;
-    --topbar-bg-color: orange;
-    --sidebar-width: 240px;
+    --app-topbar-height: 56px;
+    --app-topbar-bg-color: orange;
+    --app-sidebar-width: 240px;
     --guide-bg-color: pink;
     --mini-guide-bg-color: seagreen;
 }
 
-/*topbar*/
-.topbar {
-    background-color:var(--topbar-bg-color);
-    height: var(--topbar-height);
+/*app-topbar*/
+.app-topbar {
+    background-color:var(--app-topbar-bg-color);
+    height: var(--app-topbar-height);
     position: fixed;
     top: 0;
     width: 100%;
@@ -37,8 +37,8 @@ body[opened] {
     transition: transform 0.3s ease;
 }
 
-/*sidebar*/
-.sidebar {
+/*app-sidebar*/
+.app-sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -46,15 +46,15 @@ body[opened] {
     left: 0;
 
 }
-.sidebar:not([persistent]) {
+.app-sidebar:not([persistent]) {
     z-index: 2;
 }
-.sidebar[persistent] {
+.app-sidebar[persistent] {
     width: 100%;
 }
 
-.sidebar-container {
-    width: var(--sidebar-width);
+.app-sidebar-container {
+    width: var(--app-sidebar-width);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -65,12 +65,12 @@ body[opened] {
     transition-duration: 200ms;
 }
 
-.sidebar-container[opened] {
+.app-sidebar-container[opened] {
     transform: translate3d(0, 0, 0);
     visibility: visible;
 }
 
-.scrim {
+.app-scrim {
     position: absolute;
     top: 0;
     right: 0;
@@ -82,7 +82,7 @@ body[opened] {
     background: rgba(0, 0, 0, 0.5);
     visibility: hidden;
 }
-.scrim[visible] {
+.app-scrim[visible] {
     opacity: 1;
     visibility: visible;
     transition-duration: 200ms;
@@ -101,7 +101,7 @@ body[opened] {
 
 .guide-header {
     background-color: plum;
-    height: var(--topbar-height);
+    height: var(--app-topbar-height);
     display: none;
 }
 .guide-header[visible] {
@@ -109,7 +109,7 @@ body[opened] {
 }
 .guide-spacer{
     background-color: lavender;
-    margin-top: var(--topbar-height);
+    margin-top: var(--app-topbar-height);
     display: none;
 }
 .guide-spacer[visible] {
@@ -124,7 +124,7 @@ body[opened] {
 .mini-guide{
     position: fixed;
     left: 0;
-    top: var(--topbar-height);
+    top: var(--app-topbar-height);
     bottom: 0;
     display: inline-block;
     background-color: var(--mini-guide-bg-color);
@@ -146,24 +146,24 @@ body[opened] {
 
 
 
-/*main*/
-.main {
+/*app-main*/
+.app-main {
     background-color: beige;
-    margin-top: var(--topbar-height);
+    margin-top: var(--app-topbar-height);
     display: flex;
     flex: 1;
     flex-basis: 0.000000001px;
 }
-.main[guide-persistent-and-visible] {
-    margin-left: var(--sidebar-width);
+.app-main[guide-persistent-and-visible] {
+    margin-left: var(--app-sidebar-width);
 }
 
 
-.main[mini-guide-visible] {
+.app-main[mini-guide-visible] {
     margin-left: 72px;
 }
 
-.main-content {
+.app-main-content {
     background-color: steelblue;
     flex: 1;
 }

@@ -222,4 +222,22 @@ body[opened] {
 .app-topbar-menu{
   background-color: plum;
   margin-left: auto;
+  display: flex;
+  padding: 3px;
+}
+
+.app-topbar-avatar-btn{
+  background-color: transparent;
+  border: 0;
+}
+.app-topbar-avatar{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+.app-topbar-avatar-img{
+  width: 100%;
+  height: auto;
 }

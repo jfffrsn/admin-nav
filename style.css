@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   height: 100%;
-  background-color: #eee;
+  background-color: #f0f4f6;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -21,22 +21,24 @@ body[opened] {
 
 :root {
   --app-topbar-height: 56px;
-  --app-topbar-bg-color: #fff;
+  --app-topbar-bg-color: #006bae;
   --app-sidebar-width: 240px;
-  --app-guide-bg-color: #fafafa;
-  --app-mini-guide-bg-color: #f5f5f5;
+  --app-guide-bg-color: #fff;
+  --app-guide-header-bg: #006bae;
+  --app-mini-guide-bg-color: #fff;
   --app-mini-guide-width: 72px;
-  --app-main-bg: #eee;
+  --app-main-bg: #f0f4f6;
   --padding-base: 8px;
   --padding-base-2x: 16px;
   --padding-base-3x: 24px;
-  --app-icon-inactive: purple;
-  --app-icon-active: red;
-  --app-nav-link-bg: Beige;
-  --app-nav-link-bg-active: Burlywood;
-  --app-nav-link-bg-hover: Bisque;
-  --app-nav-link-color: green;
-  --app-nav-link-color-hover: blue;
+  --app-icon-inactive: #606060;
+  --app-icon-active: #006bae;
+  --app-nav-link-bg: transparent;
+  --app-nav-link-bg-active: #dee9ef;
+  --app-nav-link-bg-hover: #e6edf0;
+  --app-nav-link-color: #606060;
+  --app-nav-link-color-hover: #000;
+  --app-nav-link-color-active: #0076c0;
 }
 
 /*app-topbar*/
@@ -128,7 +130,7 @@ body[opened] {
 }
 
 .app-guide-header {
-  background-color: aliceblue;
+  background-color: var(--app-guide-header-bg);
   height: var(--app-topbar-height);
   padding: var(--padding-base);
   display: none;
@@ -146,7 +148,6 @@ body[opened] {
   cursor: pointer;
 }
 .app-guide-spacer {
-  background-color: lavender;
   margin-top: var(--app-topbar-height);
   display: none;
 }
@@ -229,7 +230,7 @@ body[opened] {
 
 /*topbar menu*/
 .app-topbar-menu{
-  background-color: plum;
+  /*background-color: plum;*/
   margin-left: auto;
   display: flex;
   padding: 3px;
@@ -275,6 +276,7 @@ body[opened] {
 }
 .app-guide-nav-link.active{
   background-color: var(--app-nav-link-bg-active);
+  font-weight: 600;
 }
 .app-guide-nav-link:hover,
 .app-guide-nav-link:focus {
@@ -336,6 +338,8 @@ body[opened] {
 }
 .app-mini-guide-nav-link.active{
   background-color: var(--app-nav-link-bg-active);
+  font-weight: 600;
+  color: var(--app-nav-link-color-active);
 }
 .app-mini-guide-nav-link:hover,
 .app-mini-guide-nav-link:focus {

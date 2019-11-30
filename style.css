@@ -51,8 +51,9 @@ body[opened] {
   bottom: 0;
   left: 0;
 }
-.app-sidebar:not([persistent]) {
+.app-sidebar[opened]:not([persistent]) {
   z-index: 2;
+
 }
 .app-sidebar[persistent] {
   width: 100%;
@@ -86,6 +87,7 @@ body[opened] {
   opacity: 0;
   background: rgba(0, 0, 0, 0.5);
   visibility: hidden;
+
 }
 .app-scrim[visible] {
   opacity: 1;
@@ -101,7 +103,7 @@ body[opened] {
 }
 
 .app-guide-header {
-  background-color: plum;
+  background-color: blue;
   height: var(--app-topbar-height);
   display: none;
 }
@@ -131,7 +133,7 @@ body[opened] {
   bottom: 0;
   display: inline-block;
   background-color: var(--app-mini-guide-bg-color);
-  z-index: 2030;
+  z-index: 1;
   width: var(--app-mini-guide-width);
 }
 .app-mini-guide[hidden] {

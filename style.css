@@ -119,16 +119,22 @@ body[opened] {
 }
 
 .app-guide-header {
-  background-color: blue;
+  background-color: aliceblue;
   height: var(--app-topbar-height);
+  padding: var(--padding-base);
   display: none;
 }
 .app-guide-header[visible] {
   display: flex;
 }
 .app-guide-navicon{
-    background-color: tomato;
-
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  padding: var(--padding-base);
+  margin: 0 4px 0 0;
+  border: 0;
+  cursor: pointer;
 }
 .app-guide-spacer {
   background-color: lavender;
@@ -138,8 +144,17 @@ body[opened] {
 .app-guide-spacer[visible] {
   display: block;
 }
-.app-guide-logo {
-  background-color: orchid;
+/*logo*/
+
+.app-guide-logo-container{
+  width: 80px;
+  height: 40px;
+}
+.app-guide-logo{
+  pointer-events: none;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /*mini guide*/

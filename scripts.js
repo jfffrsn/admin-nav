@@ -47,7 +47,7 @@ function closeGuideMenu() {
     appSidebar.removeAttribute('opened','');
     appSidebarContainer.removeAttribute('opened','');
     appMain.removeAttribute('guide-persistent-and-visible','');
-    appMain.removeAttribute('mini-guide-visible','');
+    //appMain.removeAttribute('mini-guide-visible','');
     appScrim.removeAttribute('visible','');
     body.style.removeProperty('overflow');
 }

@@ -50,14 +50,20 @@ body[opened] {
   right: 0;
   bottom: 0;
   left: 0;
+  width: 0;
 }
 .app-sidebar[opened]:not([persistent]) {
   z-index: 2;
+  width: 100%;
 
 }
 .app-sidebar[persistent] {
-  width: 100%;
+  width: var(--app-sidebar-width);
 }
+.app-sidebar[persistent]:not([opened]) {
+  width: var(--app-mini-guide-width);
+}
+
 
 .app-sidebar-container {
   width: var(--app-sidebar-width);

@@ -253,7 +253,7 @@ body[opened] {
   flex-direction: column;
 }
 .app-guide-nav-item {
-
+  font-size: .875rem;
 }
 .app-guide-nav-link{
   background-color: LightCyan ;

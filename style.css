@@ -29,6 +29,7 @@ body[opened] {
   --app-main-bg: #eee;
   --padding-base: 8px;
   --padding-base-2x: 16px;
+  --padding-base-3x: 24px;
   --app-icon-inactive: purple;
   --app-icon-active: red;
 }
@@ -194,7 +195,7 @@ body[opened] {
 
 .app-main-content {
   flex: 1;
-  padding: var(--padding-base-2x);
+  padding: var(--padding-base-3x);
 }
 
 

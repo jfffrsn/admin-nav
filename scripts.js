@@ -34,6 +34,7 @@ function toggleMenu() {
         body.style.overflow = 'hidden';
         appGuideNavicon.focus();
         appScrim.setAttribute('visible','');
+        appGuideHeader.setAttribute('visible','');
     }
 
 }

@@ -245,8 +245,8 @@ body[opened] {
 
 
 /*guide nav*/
-.app-guide-nav-container{
-  background-color: seagreen;
+.app-guide-nav-section {
+  xbackground-color: seagreen;
 }
 .app-guide-nav{
   display: flex;
@@ -256,7 +256,7 @@ body[opened] {
 
 }
 .app-guide-nav-link{
-  background-color: coral;
+  background-color: LightCyan ;
   display: flex;
   align-items: center;
   width: 100%;
@@ -276,7 +276,7 @@ body[opened] {
   display: block;
   width: 100%;
   height: 100%;
-  fill: RoyalBlue;
+  fill: LightSeaGreen;
 }
 
 .app-guide-nav-txt{

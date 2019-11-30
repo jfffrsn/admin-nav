@@ -74,7 +74,7 @@ let mqls = [
     window.matchMedia("(min-width: 80rem)")
 ];
 
-function mediaqueryresponse(mql){
+function mediaqueryresponse(){
 	if (mqls[0].matches){ // {max-width: 34rem} query matched
         //console.log('min-width is 34');
         appSidebar.removeAttribute('persistent','');
@@ -89,6 +89,8 @@ function mediaqueryresponse(mql){
         appSidebar.removeAttribute('persistent','');
         appSidebar.removeAttribute('opened','');
         appSidebarContainer.removeAttribute('opened','');
+        appScrim.removeAttribute('visible','');
+        body.style.removeProperty('overflow');
         appMain.setAttribute('mini-guide-visible','');
             //console.log('min-width is 63.25');
     }
@@ -102,6 +104,8 @@ function mediaqueryresponse(mql){
         appMiniGuide.setAttribute('hidden','');
         appMain.removeAttribute('mini-guide-visible','');
         appMain.setAttribute('guide-persistent-and-visible','');
+        appScrim.removeAttribute('visible','');
+        body.style.removeProperty('overflow');
         appGuideHeader.removeAttribute('visible','');
         appGuideSpacer.setAttribute('visible','');
             //console.log('min-width is 80');
@@ -110,6 +114,6 @@ function mediaqueryresponse(mql){
 }
 
 for (var i=0; i<mqls.length; i++){
-	mediaqueryresponse(mqls[i]) // call listener function explicitly at run time
+	mediaqueryresponse() // call listener function explicitly at run time
 	mqls[i].addListener(mediaqueryresponse) // attach listener function to listen in on state changes
 }

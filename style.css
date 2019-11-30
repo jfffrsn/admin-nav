@@ -19,11 +19,13 @@ body[opened] {
 
 :root {
   --app-topbar-height: 56px;
-  --app-topbar-bg-color: orange;
+  --app-topbar-bg-color: #fff;
   --app-sidebar-width: 240px;
-  --guide-bg-color: pink;
-  --app-mini-guide-bg-color: seagreen;
+  --app-guide-bg-color: #fafafa;
+  --app-mini-guide-bg-color: #f5f5f5;
   --app-mini-guide-width: 72px;
+  --padding-base: 8px;
+  --padding-base-2x: 16px;
 }
 
 /*app-topbar*/
@@ -40,6 +42,12 @@ body[opened] {
 
 .app-topbar-navicon{
     background-color: tomato;
+    height: 40px;
+    width: 40px;
+    padding: var(--padding-base);
+    margin: 0 4px 0 0;
+    border: 0;
+    cursor: pointer;
 }
 
 
@@ -105,7 +113,7 @@ body[opened] {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: var(--guide-bg-color);
+  background-color: var(--app-guide-bg-color);
 }
 
 .app-guide-header {
@@ -118,6 +126,7 @@ body[opened] {
 }
 .app-guide-navicon{
     background-color: tomato;
+
 }
 .app-guide-spacer {
   background-color: lavender;
@@ -166,4 +175,34 @@ body[opened] {
 .app-main-content {
   background-color: steelblue;
   flex: 1;
+}
+
+
+
+
+
+/*header*/
+.app-top-header {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: var(--padding-base);
+}
+/*logo*/
+
+.app-topbar-logo-container{
+  width: 80px;
+  height: 40px;
+}
+.app-topbar-logo{
+  pointer-events: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*topbar menu*/
+.app-topbar-menu{
+  background-color: plum;
+  margin-left: auto;
 }

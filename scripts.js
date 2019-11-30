@@ -29,7 +29,6 @@ function toggleMenu() {
         appMain.setAttribute('guide-persistent-and-visible','');
         appMain.removeAttribute('mini-guide-visible','');
     } else if (!appSidebar.hasAttribute('persistent') && !appSidebar.hasAttribute('opened')) {
-        console.log('not persistent an not opened');
         appSidebar.setAttribute('opened','');
         appSidebarContainer.setAttribute('opened','');
         body.style.overflow = 'hidden';
@@ -43,7 +42,6 @@ function toggleMenu() {
 appGuideNavicon.addEventListener("click", closeGuideMenu);
 
 function closeGuideMenu() {
-    console.log('closeGuideMenu');
     appSidebar.removeAttribute('opened','');
     appSidebarContainer.removeAttribute('opened','');
     appMain.removeAttribute('guide-persistent-and-visible','');
@@ -56,7 +54,6 @@ function closeGuideMenu() {
 //backdrop
 appScrim.addEventListener("click", closeScrimMenu);
 function closeScrimMenu() {
-    console.log('closeScrimMenu');
     appSidebar.removeAttribute('opened','');
     appSidebarContainer.removeAttribute('opened','');
     appScrim.removeAttribute('visible','');

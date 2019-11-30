@@ -29,6 +29,8 @@ body[opened] {
   --app-main-bg: #eee;
   --padding-base: 8px;
   --padding-base-2x: 16px;
+  --app-icon-inactive: purple;
+  --app-icon-active: red;
 }
 
 /*app-topbar*/
@@ -276,7 +278,11 @@ body[opened] {
   display: block;
   width: 100%;
   height: 100%;
-  fill: LightSeaGreen;
+  fill: var(--app-icon-inactive);
+}
+
+.app-guide-nav-icon.active > svg {
+  fill: var(--app-icon-active);
 }
 
 .app-guide-nav-txt{

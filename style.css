@@ -288,3 +288,54 @@ body[opened] {
 .app-guide-nav-txt{
   xbackground-color: aqua;
 }
+
+
+
+
+
+
+
+
+/*mini-guide nav*/
+.app-mini-guide-nav-section {
+  xbackground-color: seagreen;
+}
+.app-mini-guide-nav{
+  display: flex;
+  flex-direction: column;
+}
+.app-mini-guide-nav-item {
+  font-size: .625rem;
+}
+.app-mini-guide-nav-link{
+  background-color: LightCyan ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 40px;
+  padding: var(--padding-base-2x) 0;
+  text-decoration: none;
+}
+.app-mini-guide-nav-icon{
+  xbackground-color: orchid;
+  display: flex;
+  height: 24px;
+  width: 24px;
+  margin-bottom: var(--padding-base);
+}
+.app-mini-guide-nav-icon > svg {
+  pointer-events: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: var(--app-icon-inactive);
+}
+
+.app-mini-guide-nav-icon.active > svg {
+  fill: var(--app-icon-active);
+}
+
+.app-mini-guide-nav-txt{
+  xbackground-color: aqua;
+}

@@ -31,12 +31,12 @@ body[opened] {
   --padding-base: 8px;
   --padding-base-2x: 16px;
   --padding-base-3x: 24px;
-  --app-icon-inactive: #606060;
+  --app-icon-inactive: #757575;
   --app-icon-active: #006bae;
   --app-nav-link-bg: transparent;
   --app-nav-link-bg-active: #dee9ef;
-  --app-nav-link-bg-hover: #e6edf0;
-  --app-nav-link-color: #606060;
+  --app-nav-link-bg-hover: #eee;
+  --app-nav-link-color: #757575;
   --app-nav-link-color-hover: #000;
   --app-nav-link-color-active: #0076c0;
 }
@@ -54,7 +54,7 @@ body[opened] {
 }
 
 .app-topbar-navicon{
-    background-color: tomato;
+    background-color: transparent;
     height: 40px;
     width: 40px;
     padding: var(--padding-base);

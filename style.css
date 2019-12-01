@@ -277,6 +277,9 @@ body[opened] {
 .app-main-content {
   flex: 1;
   padding: var(--padding-base-3x);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 

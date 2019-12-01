@@ -68,6 +68,37 @@ body[opened] {
 }
 
 
+/*search*/
+.app-topbar-search-btn{
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  padding: var(--padding-base);
+  margin: 0 4px 0 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.app-topbar-search-btn > svg {
+  fill: var(--app-navicon-inactive);
+}
+
+/*alerts*/
+.app-topbar-alerts-btn{
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  padding: var(--padding-base);
+  margin: 0 4px 0 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.app-topbar-alerts-btn > svg {
+  fill: var(--app-navicon-inactive);
+}
+
+
 /*app-sidebar*/
 .app-sidebar {
   position: fixed;

@@ -37,7 +37,7 @@ body[opened] {
   --app-icon-inactive: #424242;
   --app-icon-active: #006bae;
   --app-nav-link-bg: transparent;
-  --app-nav-link-bg-active: #e2f1fa;
+  --app-nav-link-bg-active: #f0f4f6;
   --app-nav-link-bg-hover: #eee;
   --app-nav-link-color: #757575;
   --app-nav-link-color-hover: #000;
@@ -354,6 +354,7 @@ body[opened] {
 .app-guide-nav-link.active{
   background-color: var(--app-nav-link-bg-active);
   font-weight: 600;
+  color: var(--app-nav-link-color-active);
 }
 .app-guide-nav-link:hover,
 .app-guide-nav-link:focus {

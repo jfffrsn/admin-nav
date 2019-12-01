@@ -34,10 +34,10 @@ body[opened] {
   --padding-base: 8px;
   --padding-base-2x: 16px;
   --padding-base-3x: 24px;
-  --app-icon-inactive: #757575;
+  --app-icon-inactive: #424242;
   --app-icon-active: #006bae;
   --app-nav-link-bg: transparent;
-  --app-nav-link-bg-active: #dee9ef;
+  --app-nav-link-bg-active: #e2f1fa;
   --app-nav-link-bg-hover: #eee;
   --app-nav-link-color: #757575;
   --app-nav-link-color-hover: #000;
@@ -233,6 +233,7 @@ body[opened] {
 .app-guide-logo-container{
   width: 80px;
   height: 40px;
+  min-width: 80px;
 }
 .app-guide-logo{
   pointer-events: none;
@@ -294,6 +295,7 @@ body[opened] {
 .app-topbar-logo-container{
   width: 80px;
   height: 40px;
+  min-width: 80px;
 }
 .app-topbar-logo{
   pointer-events: none;

@@ -119,7 +119,7 @@ for (var i=0; i<mqls.length; i++){
 	mqls[i].addListener(mediaqueryresponse) // attach listener function to listen in on state changes
 }
 
-//close menu on escape
+//close guide menu on escape
 (function () {
     window.onkeyup = function (e) {
         if (e.keyCode == 27) {

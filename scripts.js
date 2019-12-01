@@ -118,3 +118,12 @@ for (var i=0; i<mqls.length; i++){
 	mediaqueryresponse() // call listener function explicitly at run time
 	mqls[i].addListener(mediaqueryresponse) // attach listener function to listen in on state changes
 }
+
+//close menu on escape
+(function () {
+    window.onkeyup = function (e) {
+        if (e.keyCode == 27) {
+            closeGuideMenu();
+        }
+    }
+})();

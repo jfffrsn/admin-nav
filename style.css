@@ -19,6 +19,7 @@ body[opened] {
   overflow: hidden;
 }
 
+/*skip nav*/
 .skipnav {
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -27,9 +28,6 @@ body[opened] {
   width: 1px;
   z-index: 3;
 }
-
-
-
 .skipnav:hover,
 .skipnav:active,
 .skipnav:focus {
@@ -47,7 +45,6 @@ body[opened] {
   padding: .5rem 1rem;
   text-decoration: none;
   width: auto;
-
 }
 
 

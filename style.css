@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  -webkit-text-size-adjust:none;
+  -webkit-text-size-adjust: none;
 }
 
 *,
@@ -13,7 +13,7 @@ body {
   margin: 0;
   height: 100%;
   background-color: #f0f4f6;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 body[opened] {
@@ -29,12 +29,13 @@ body[opened] {
   width: 1px;
   z-index: 3;
 }
+
 .skipnav:hover,
 .skipnav:active,
 .skipnav:focus {
   background-color: #000;
   border-radius: 3px;
-  clip: auto!important;
+  clip: auto !important;
   color: #fff;
   outline: none;
   display: block;
@@ -43,12 +44,10 @@ body[opened] {
   height: auto;
   left: 8px;
   top: 8px;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   width: auto;
 }
-
-
 
 :root {
   --app-topbar-height: 56px;
@@ -98,7 +97,7 @@ body[opened] {
   border-radius: 50%;
 }
 
-.app-topbar-navicon>svg {
+.app-topbar-navicon > svg {
   fill: var(--app-navicon-inactive);
 }
 
@@ -124,7 +123,7 @@ body[opened] {
   background-color: var(--app-topbar-btn-bg-hover);
 }
 
-.app-topbar-search-btn>svg {
+.app-topbar-search-btn > svg {
   fill: var(--app-navicon-inactive);
 }
 
@@ -146,8 +145,7 @@ body[opened] {
   background-color: var(--app-topbar-btn-bg-hover);
 }
 
-
-.app-topbar-alerts-btn>svg {
+.app-topbar-alerts-btn > svg {
   fill: var(--app-navicon-inactive);
 }
 
@@ -159,7 +157,7 @@ body[opened] {
   top: 6px;
   border-radius: 50%;
   border: var(--app-topbar-bg-color) 2px solid;
-  font-size: .6875rem;
+  font-size: 0.6875rem;
   font-weight: 600;
   width: 12px;
   height: 12px;
@@ -178,7 +176,6 @@ body[opened] {
 .app-sidebar[opened]:not([persistent]) {
   z-index: 2;
   width: 100%;
-
 }
 
 .app-sidebar[persistent] {
@@ -188,7 +185,6 @@ body[opened] {
 .app-sidebar[persistent]:not([opened]) {
   width: var(--app-mini-guide-width);
 }
-
 
 .app-sidebar-container {
   width: var(--app-sidebar-width);
@@ -218,7 +214,6 @@ body[opened] {
   opacity: 0;
   background: rgba(0, 0, 0, 0.5);
   visibility: hidden;
-
 }
 
 .app-scrim[visible] {
@@ -261,7 +256,7 @@ body[opened] {
   background-color: var(--app-topbar-btn-bg-hover);
 }
 
-.app-guide-navicon>svg {
+.app-guide-navicon > svg {
   fill: var(--app-navicon-inactive);
 }
 
@@ -305,7 +300,6 @@ body[opened] {
   display: none;
 }
 
-
 /*app-main*/
 .app-main {
   background-color: var(--app-main-bg);
@@ -330,10 +324,6 @@ body[opened] {
   flex-direction: column;
   justify-content: center;
 }
-
-
-
-
 
 /*header*/
 .app-top-header {
@@ -385,9 +375,9 @@ body[opened] {
   height: auto;
 }
 
-
 /*guide nav*/
-.app-guide-nav-section {}
+.app-guide-nav-section {
+}
 
 .app-guide-nav {
   display: flex;
@@ -395,7 +385,7 @@ body[opened] {
 }
 
 .app-guide-nav-item {
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .app-guide-nav-link {
@@ -421,7 +411,6 @@ body[opened] {
   color: var(--app-nav-link-color-hover);
 }
 
-
 .app-guide-nav-icon {
   margin-right: var(--padding-base-2x);
   display: flex;
@@ -429,7 +418,7 @@ body[opened] {
   width: 24px;
 }
 
-.app-guide-nav-icon>svg {
+.app-guide-nav-icon > svg {
   pointer-events: none;
   display: block;
   width: 100%;
@@ -437,21 +426,16 @@ body[opened] {
   fill: var(--app-icon-inactive);
 }
 
-.app-guide-nav-icon.active>svg {
+.app-guide-nav-icon.active > svg {
   fill: var(--app-icon-active);
 }
 
-.app-guide-nav-txt {}
-
-
-
-
-
-
-
+.app-guide-nav-txt {
+}
 
 /*mini-guide nav*/
-.app-mini-guide-nav-section {}
+.app-mini-guide-nav-section {
+}
 
 .app-mini-guide-nav {
   display: flex;
@@ -459,7 +443,7 @@ body[opened] {
 }
 
 .app-mini-guide-nav-item {
-  font-size: .625rem;
+  font-size: 0.625rem;
 }
 
 .app-mini-guide-nav-link {
@@ -492,7 +476,7 @@ body[opened] {
   margin-bottom: var(--padding-base);
 }
 
-.app-mini-guide-nav-icon>svg {
+.app-mini-guide-nav-icon > svg {
   pointer-events: none;
   display: block;
   width: 100%;
@@ -500,8 +484,9 @@ body[opened] {
   fill: var(--app-icon-inactive);
 }
 
-.app-mini-guide-nav-icon.active>svg {
+.app-mini-guide-nav-icon.active > svg {
   fill: var(--app-icon-active);
 }
 
-.app-mini-guide-nav-txt {}
+.app-mini-guide-nav-txt {
+}

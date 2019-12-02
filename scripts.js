@@ -74,6 +74,9 @@ let mqls = [
 function mediaqueryresponse() {
   if (mqls[0].matches) {
     appSidebar.removeAttribute('persistent', '');
+    appSidebar.removeAttribute('persistent', '');
+    appSidebar.removeAttribute('opened', '');
+    appSidebarContainer.removeAttribute('opened', '');
     appMiniGuide.setAttribute('hidden', '');
     appMain.removeAttribute('guide-persistent-and-visible', '');
     appMain.removeAttribute('mini-guide-visible', '');

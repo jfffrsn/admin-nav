@@ -51,13 +51,13 @@ body[opened] {
 
 :root {
   --app-topbar-height: 56px;
-  --app-topbar-bg-color: #006bae;
+  --app-topbar-bg-color: #0076c0;
   --app-topbar-btn-bg: transparent;
   --app-topbar-btn-bg-hover: #007ece;
   --app-navicon-inactive: #fff;
   --app-sidebar-width: 240px;
   --app-guide-bg-color: #fff;
-  --app-guide-header-bg: #006bae;
+  --app-guide-header-bg: #0076c0;
   --app-mini-guide-bg-color: #fff;
   --app-mini-guide-width: 72px;
   --app-main-bg: #f0f4f6;
@@ -65,7 +65,7 @@ body[opened] {
   --padding-base-2x: 16px;
   --padding-base-3x: 24px;
   --app-icon-inactive: #424242;
-  --app-icon-active: #006bae;
+  --app-icon-active: #0076c0;
   --app-nav-link-bg: transparent;
   --app-nav-link-bg-active: #f0f4f6;
   --app-nav-link-bg-hover: #e4eff4;

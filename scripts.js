@@ -65,10 +65,10 @@ function closeScrimMenu() {
 var breakpoints = ['34rem', '48rem', '63.25rem', '80rem'];
 
 let mqls = [
-  window.matchMedia('(screen and min-width: 34rem)'),
-  window.matchMedia('(screen and min-width: 48rem)'),
-  window.matchMedia('(screen and min-width: 63.25rem)'),
-  window.matchMedia('(screen and min-width: 80rem)')
+  window.matchMedia('screen and (min-width: 34rem)'),
+  window.matchMedia('screen and (min-width: 48rem)'),
+  window.matchMedia('screen and (min-width: 63.25rem)'),
+  window.matchMedia('screen and (min-width: 80rem)')
 ];
 
 function mediaqueryresponse() {

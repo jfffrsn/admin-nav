@@ -63,20 +63,14 @@ function closeScrimMenu() {
 
 //screen resizing
 let mqls = [
-  window.matchMedia("(min-width: 34rem)"),
+  window.matchMedia("(min-width: 0)"),
   window.matchMedia("(min-width: 48rem)"),
   window.matchMedia("(min-width: 63.25rem)"),
   window.matchMedia("(min-width: 80rem)")
 ];
 
-for (var i = 0; i < mqls.length; i++) {
-  mediaqueryresponse(); // call listener function explicitly at run time
-  mqls[i].addListener(mediaqueryresponse); // attach listener function to listen in on state changes
-}
-
 function mediaqueryresponse() {
   if (mqls[0].matches) {
-    appSidebar.removeAttribute("persistent", "");
     appSidebar.removeAttribute("persistent", "");
     appSidebar.removeAttribute("opened", "");
     appSidebarContainer.removeAttribute("opened", "");
@@ -109,6 +103,11 @@ function mediaqueryresponse() {
     appGuideHeader.removeAttribute("visible", "");
     appGuideSpacer.setAttribute("visible", "");
   }
+}
+
+for (var i = 0; i < mqls.length; i++) {
+  mediaqueryresponse(); // call listener function explicitly at run time
+  mqls[i].addListener(mediaqueryresponse); // attach listener function to listen in on state changes
 }
 
 //close guide menu on escape

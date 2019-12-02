@@ -62,8 +62,6 @@ function closeScrimMenu() {
 }
 
 //screen resizing
-var breakpoints = ["34rem", "48rem", "63.25rem", "80rem"];
-
 let mqls = [
   window.matchMedia("(min-width: 34rem)"),
   window.matchMedia("(min-width: 48rem)"),

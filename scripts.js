@@ -114,7 +114,11 @@ for (var i = 0; i < mqls.length; i++) {
 (function() {
   window.onkeyup = function(e) {
     if (e.keyCode == 27) {
-      closeGuideMenu();
+      if (
+        !appSidebar.hasAttribute("persistent")
+      ) {
+        closeGuideMenu();
+      }
     }
   };
 })();

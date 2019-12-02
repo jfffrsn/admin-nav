@@ -73,7 +73,6 @@ let mqls = [
 
 function mediaqueryresponse() {
   if (mqls[0].matches) {
-    // {max-width: 34rem} query matched
     appSidebar.removeAttribute("persistent", "");
     appMiniGuide.setAttribute("hidden", "");
     appMain.removeAttribute("guide-persistent-and-visible", "");
@@ -82,7 +81,6 @@ function mediaqueryresponse() {
     appGuideSpacer.removeAttribute("visible", "");
   }
   if (mqls[1].matches) {
-    // {max-width: 48rem} query matched
     appMiniGuide.removeAttribute("hidden", "");
     appSidebar.removeAttribute("persistent", "");
     appSidebar.removeAttribute("opened", "");
@@ -92,10 +90,8 @@ function mediaqueryresponse() {
     appMain.setAttribute("mini-guide-visible", "");
   }
   if (mqls[2].matches) {
-    // {max-width: 48rem} query matched
   }
   if (mqls[3].matches) {
-    // {max-width: 48rem} query matched
     appSidebar.setAttribute("persistent", "");
     appSidebar.setAttribute("opened", "");
     appSidebarContainer.setAttribute("opened", "");

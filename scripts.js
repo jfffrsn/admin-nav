@@ -23,7 +23,6 @@ function toggleMenu() {
     appMain.removeAttribute("guide-persistent-and-visible", "");
     appMain.setAttribute("mini-guide-visible", "");
   } else if (appSidebar.hasAttribute("persistent")) {
-    //appSidebar.removeAttribute('persistent','');
     appSidebar.setAttribute("opened", "");
     appSidebarContainer.setAttribute("opened", "");
     appMiniGuide.setAttribute("hidden", "");
@@ -49,7 +48,6 @@ function closeGuideMenu() {
   appSidebar.removeAttribute("opened", "");
   appSidebarContainer.removeAttribute("opened", "");
   appMain.removeAttribute("guide-persistent-and-visible", "");
-  //appMain.removeAttribute('mini-guide-visible','');
   appScrim.removeAttribute("visible", "");
   body.style.removeProperty("overflow");
 }

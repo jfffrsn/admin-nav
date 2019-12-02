@@ -76,7 +76,6 @@ let mqls = [
 function mediaqueryresponse() {
   if (mqls[0].matches) {
     // {max-width: 34rem} query matched
-    //console.log('min-width is 34');
     appSidebar.removeAttribute("persistent", "");
     appMiniGuide.setAttribute("hidden", "");
     appMain.removeAttribute("guide-persistent-and-visible", "");

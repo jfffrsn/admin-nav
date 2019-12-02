@@ -54,6 +54,7 @@ function closeGuideMenu() {
 
 //backdrop
 appScrim.addEventListener("click", closeScrimMenu);
+
 function closeScrimMenu() {
   appSidebar.removeAttribute("opened", "");
   appSidebarContainer.removeAttribute("opened", "");
@@ -114,9 +115,7 @@ for (var i = 0; i < mqls.length; i++) {
 (function() {
   window.onkeyup = function(e) {
     if (e.keyCode == 27) {
-      if (
-        !appSidebar.hasAttribute("persistent")
-      ) {
+      if (!appSidebar.hasAttribute("persistent")) {
         closeGuideMenu();
       }
     }

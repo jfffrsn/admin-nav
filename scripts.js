@@ -53,9 +53,9 @@ function closeGuideMenu() {
 }
 
 //backdrop
-appScrim.addEventListener("click", closeScrimMenu);
+appScrim.addEventListener("click", closeScrim);
 
-function closeScrimMenu() {
+function closeScrim() {
   appSidebar.removeAttribute("opened", "");
   appSidebarContainer.removeAttribute("opened", "");
   appScrim.removeAttribute("visible", "");

@@ -60,15 +60,15 @@ body[opened] {
   --app-guide-header-bg: #1565C0;
   --app-mini-guide-bg-color: #fff;
   --app-mini-guide-width: 72px;
-  --app-main-bg: #f3f4f5;
+  --app-main-bg: #f1f3f5;
   --padding-base: 8px;
   --padding-base-2x: 16px;
   --padding-base-3x: 24px;
   --app-icon-inactive: #424242;
   --app-icon-active: #1565C0;
   --app-nav-link-bg: transparent;
-  --app-nav-link-bg-active: #f3f4f5;
-  --app-nav-link-bg-hover: #e7eff9;
+  --app-nav-link-bg-active: #fff;
+  --app-nav-link-bg-hover: #dee2e6;
   --app-nav-link-color: #757575;
   --app-nav-link-color-hover: #000;
   --app-nav-link-color-active: #0d47a1;
@@ -430,8 +430,32 @@ body[opened] {
   fill: var(--app-icon-active);
 }
 
-.app-guide-nav-txt {
+.app-guide-nav-txt {}
+
+/*expander*/
+.app-guide-nav-expander{
+  display: inline-flex;
+  margin-left: auto;
 }
+
+.app-guide-subnav{
+  background-color: transparent;
+}
+
+.app-guide-subnav-item{
+  display: block;
+  font-size: 0.875rem;
+}
+.app-guide-subnav-link{
+  color: var(--app-nav-link-color);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+  padding: 0 var(--padding-base-2x) 0 56px;
+  text-decoration: none;
+}
+
 
 /*mini-guide nav*/
 .app-mini-guide-nav-section {
